@@ -251,4 +251,57 @@ header {
   }
   
 
+  #education {
+    text-align: left;
+    padding: 50px 0;
+    width: 700px;
+    max-width: 90%;
+  }
   
+  #education h2 {
+    margin-bottom: 20px;
+    letter-spacing: 0.05em;
+  }
+  
+  .education-container {
+    display: flex;
+    justify-content: flex-start;  
+    gap: 20px;
+  }
+  
+  .education-card {
+    background-color: #030712;
+    border: 1px solid #1F2937;
+    padding: 15px;
+    border-radius: 10px;
+    width: 100%;
+    text-align: left;  
+  }
+  
+.education-card .school-logo {
+  max-width: 100px;
+  margin-bottom: 10px;
+}
+
+.edu-years {
+  font-weight: lighter;
+  margin: 5px 0;
+}
+
+.edu-school {
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.edu-degree {
+    margin: 5px 0;
+    font-weight: lighter
+  }
+
+footer {
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+  margin-top: 50px;
+  font-size: 14px;
+}
