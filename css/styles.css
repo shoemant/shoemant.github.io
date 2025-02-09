@@ -68,3 +68,71 @@ header {
   font-weight: bold;
 }
 
+#home {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 0;
+  width: 700px;
+  max-width: 90%;
+}
+
+.intro {
+  text-align: left;
+  flex: 1;
+}
+
+.profile-pic img {
+  width: 200px;
+  height: auto;
+  border: 2px solid #1F2937;
+  margin-left: 40px;
+}
+
+.buttons,
+.contact-buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: start;
+  margin-top: 20px;
+  align-items: center;
+}
+
+.btn {
+  background-color: #030712;
+  border: 1px solid #1F2937;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.btn img {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+}
+
+.resume-btn {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 10px 25px;
+}
+
+.icon-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.icon-btn img {
+  width: 30px;
+  height: 30px;
+}
