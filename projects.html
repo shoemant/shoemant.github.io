@@ -1,43 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects - Sumant Dhir</title>
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sumant Dhir</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+  </head>
+  <body>
     <header>
-        <nav>
-            <h2>SUMANT DHIR</h2>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+      <div class="logo">
+        <h2>SUMANT DHIR</h2>
+      </div>
+      <nav class="nav-bar">
+        <ul>
+          <li><a href="index.html">home</a></li>
+          <li><a href="projects.html">projects</a></li>
+          <li><a href="contact.html">contact</a></li>
+        </ul>
+      </nav>
     </header>
 
     <section id="projects">
-        <h2>my projects</h2>
-        <div class="project-container">
-            <div class="project-card">
-                <img src="assets/images/chess_image.png" alt="Chess AI Project">
-                <h2>Chess AI Project</h2>
-                <p>A personal C++ project featuring a fully functional chess game with an intelligent AI opponent and a graphical user interface built using SFML.</p>
-                <a href="https://github.com/shoemant/Chess-AI-Project" target="_blank">GitHub</a>
-            </div>
-            <div class="project-card">
-                <img src="assets/images/teleportplus.png" alt="TeleportPlus">
-                <h2>TeleportPlus</h2>
-                <p>TeleportPlus is a Minecraft plugin that enhances the teleportation experience.</p>
-                <a href="https://github.com/shoemant/TeleportPlus" target="_blank">GitHub</a>
-            </div>
+      <h2>my projects.</h2>
+      <div class="project-container">
+        <div class="project-card">
+          <img src="assets/images/chess_image.png" alt="Chess AI Project" />
+          <h2>Chess AI Project</h2>
+          <p>
+            A personal C++ project featuring a fully functional chess game with an
+            intelligent AI opponent and a graphical user interface built using SFML.
+          </p>
+          <p>
+            C++, SFML, Negamax Algorithm
+          </p>
+          <a href="https://github.com/shoemant/Chess-AI-Project" target="_blank" class="source-btn">
+            <img src="assets/icons/github.png" alt="GitHub" />
+            <span>Source</span>
+          </a>
         </div>
+        <div class="project-card">
+          <img src="assets/images/teleportplus.png" alt="TeleportPlus" />
+          <h2>TeleportPlus</h2>
+          <p>
+            TeleportPlus is a Minecraft plugin that enhances the teleportation experience.
+          </p>
+          <p>
+            Java, Bukkit API, YAML
+          </p>
+          <a href="https://github.com/shoemant/TeleportPlus" target="_blank" class="source-btn">
+            <img src="assets/icons/github.png" alt="GitHub" />
+            <span>Source</span>
+          </a>
+        </div>
+        <div class="project-card">
+            <img src="assets/images/heartplugin.png" alt="HeartPlugin" />
+            <h2>HeartPlugin</h2>
+            <p>
+              A simple and fun Minecraft plugin that adds interactions between players when they interact with each other or enter beds. 
+              Players can kiss or hug each other with visual and audio effects, and receive a cute message when sleeping next to someone in adjacent beds
+            </p>
+            <p>
+                Java, Bukkit API
+              </p>
+            <a href="https://github.com/shoemant/HeartPlugin" target="_blank" class="source-btn">
+              <img src="assets/icons/github.png" alt="GitHub" />
+              <span>Source</span>
+            </a>
+          </div>
+          <div class="project-card">
+            <img src="assets/images/tictactoe.png" alt="Unwinnable TicTacToe" />
+            <h2>Unwinnable TicTacToe</h2>
+            <p>
+                A simple console-based Tic-Tac-Toe game written in Java. The game allows a player to compete against an automated 
+                opponent that uses the minimax algorithm to determine its moves. The board is displayed in the console, and players 
+                input their moves by selecting numbers from 1 to 9, corresponding to positions on the game board.
+            </p>
+            <p>
+                Java, Minimax
+              </p>
+            <a href="https://github.com/shoemant/Unwinnable-TicTacToe" target="_blank" class="source-btn">
+              <img src="assets/icons/github.png" alt="GitHub" />
+              <span>Source</span>
+            </a>
+          </div>
+      </div>
     </section>
 
     <footer>
-        <p>&copy; 2025 Sumant Dhir</p>
+      <p>&copy; 2025 Sumant Dhir</p>
     </footer>
-</body>
+  </body>
 </html>
