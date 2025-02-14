@@ -48,9 +48,16 @@ Watch the video below and answer the questions:
 - [Git & GitHub Tutorial for Beginners #11 - Collaborating on GitHub](https://youtu.be/MnUd31TvBoU)
 ### Questions
 1. `[2 marks]` In 3-4 sentences, explain what pull requests (PRs) are and their purpose.
-2. `[1 marks (0.5 each)]` Describe what the green and red colours indicate when viewing `Files changed` on a pull request.  
+
+A pull request (PR) is a feature in GitHub that allows developers to propose changes to a codebase before merging them into the main branch. PRs facilitate code review, enabling team members to discuss modifications, suggest improvements, and ensure code quality before integration. They help maintain a structured development workflow, prevent bugs, and allow for version control tracking. Once approved, the changes can be merged into the target branch.
+
+
+3. `[1 marks (0.5 each)]` Describe what the green and red colours indicate when viewing `Files changed` on a pull request.  
    ![Github Red Green](github-red-green.png)
-3. Suppose you have the following branches on github (`develop`, `test` and `production`) and you are currently on the `develop` branch.
+
+Green indicates added or modified lines of code in the proposed changes. Red represents deleted or replaced lines from the original file.
+   
+5. Suppose you have the following branches on github (`develop`, `test` and `production`) and you are currently on the `develop` branch.
    a. `[2 marks]` In your own words, describe what following git command does:
       - `git merge test`
       After running the git command above, you recieve the following error in your `README.md` file:
@@ -62,5 +69,16 @@ Watch the video below and answer the questions:
       Line 5: totally different content to merge later
       Line 6: >>>>>> test
       ```
+      The command ```git merge test``` attempts to merge the test branch into the current branch (develop). If successful, it integrates the changes from test into develop, preserving the commit history. However, if there are conflicts (changes made to the same lines in both branches), Git will halt the merge and prompt the user to resolve them manually.
+   
    b. `[1 mark]` Explain why this message has appeared and what it means.
+
+The conflict message appears because both the develop and test branches have modified the same lines in README.md, but in different ways. Git is unable to automatically determine which changes should be kept, so it marks the conflicting section for manual resolution.
+
    c. `[1 mark]` Identify which line(s) of code belong to which branch (`develop` and `test`)
+
+   Lines 2-3: belong to develop (HEAD).  
+   Line 5: belongs to test.  
+   To resolve the conflict, you must manually edit the file, keeping the desired changes, then run:  
+   ``` git add README.md ```  
+   ``` git commit -m "Resolved merge conflict between develop and test" ```
